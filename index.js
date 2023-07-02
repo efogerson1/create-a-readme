@@ -4,6 +4,8 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 
+const generateMarkdown = require('./generateMarkdown');
+
 const generateHTML = ({ name, location, hobby, food, github, linkedin }) =>
   `<!DOCTYPE html>
 <html lang="en">

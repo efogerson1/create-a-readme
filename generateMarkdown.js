@@ -17,10 +17,7 @@ function getLicenseBadge(packageJson) {
       case "ISC":
           badge = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
           break;
-      // Add more cases for other licenses if needed
-      default:
-          badge = "";
-          break;
+ 
   }
 
   return badge;
@@ -45,10 +42,6 @@ function getLicenseLink(packageJson) {
           break;
       case "ISC":
           link = "https://opensource.org/licenses/ISC";
-          break;
-      // Add more cases for other licenses if needed
-      default:
-          link = "";
           break;
   }
 
@@ -86,11 +79,6 @@ This project is licensed under the [Apache License 2.0](https://opensource.org/l
 
 This project is licensed under the [ISC License](https://opensource.org/licenses/ISC).
 `;
-          break;
-      // Add more cases for other licenses if needed
-      default:
-          licenseSection = "";
-          break;
   }
 
   return licenseSection;
@@ -114,11 +102,4 @@ module.exports = {
   generateLicenseSection,
 };
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
-}
-
-module.exports = generateMarkdown;
+// module.exports = generateMarkdown;
