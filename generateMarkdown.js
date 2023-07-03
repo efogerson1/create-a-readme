@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-// function renderLicenseBadge(license) {}
+
 const packageJson = require('./package.json');
 
 function getLicenseBadge(packageJson) {
@@ -24,82 +24,84 @@ function getLicenseBadge(packageJson) {
 }
 
 const licenseBadge = getLicenseBadge(packageJson);
-console.log(licenseBadge);
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
 
-function getLicenseLink(packageJson) {
-  const license = packageJson.license;
-  let link;
 
-  switch (license) {
-      case "MIT":
-          link = "https://opensource.org/licenses/MIT";
-          break;
-      case "Apache-2.0":
-          link = "https://opensource.org/licenses/Apache-2.0";
-          break;
-      case "ISC":
-          link = "https://opensource.org/licenses/ISC";
-          break;
+function getLicenseLink(license) {
+
+  if (license !== "None") {
+    return `-[License](#License)`
   }
 
-  return link;
+  return "";
 }
 
-const licenseLink = getLicenseLink(packageJson);
-console.log(licenseLink);
+
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
 
-function generateLicenseSection(packageJson) {
-  const license = packageJson.license;
+
+function generateLicenseSection(license) {
   let licenseSection;
 
   switch (license) {
-      case "MIT":
+      case "MIT License":
           licenseSection = `
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 `;
           break;
-      case "Apache-2.0":
+      case "Apache License 2.0":
           licenseSection = `
 ## License
 
 This project is licensed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0).
 `;
           break;
-      case "ISC":
+      case "ISC License":
           licenseSection = `
 ## License
 
 This project is licensed under the [ISC License](https://opensource.org/licenses/ISC).
-`;
+`
+break;
+case "None":
+    licenseSection = ""
   }
 
   return licenseSection;
 }
 
-const licenseSection = generateLicenseSection(packageJson);
-console.log(licenseSection);
+
+
 
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(packageJson) {
-  return `# ${data.title}
+function generateMarkdown({title, name, location, hobby, food, github, linkedin, license }) {
+  return `# ${title}
 
+${licenseBadge}
+
+# Table of Contents
+- [Name](#${name})
+- [Location](#${location})
+- [Hobby](#${hobby})
+- [Food](#${food})
+- [GitHub](#${github})
+- [LinkedIn](#${linkedin})
+${getLicenseLink(license)}
+
+## ${name}
+
+${generateLicenseSection(license)}
 `;
 }
 
 module.exports = {
-  generateMarkdown,
-  getLicenseBadge,
-  getLicenseLink,
-  generateLicenseSection,
+  generateMarkdown
 };
 
-// module.exports = generateMarkdown;
+
