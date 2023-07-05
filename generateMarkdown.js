@@ -92,7 +92,7 @@ function generateMarkdown({title, description, installation, usage, contributing
 ${licenseBadge}
 
 # Table of Contents
-- [Descrption](#${description})
+- [Description](#${description})
 - [Installation](#${installation})
 - [Usage](#${usage})
 - [Contributions](#${contributing})
