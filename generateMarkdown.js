@@ -95,7 +95,7 @@ ${licenseBadge}
 - [Descrption](#${description})
 - [Installation](#${installation})
 - [Usage](#${usage})
-- [Contribution Guidelines](#${contributing})
+- [Contributions](#${contributing})
 - [GitHub](#${github})
 - [LinkedIn](#${linkedin})
 - [License](#${getLicenseLink(license)})
