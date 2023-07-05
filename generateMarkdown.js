@@ -17,13 +17,17 @@ function getLicenseBadge(packageJson) {
       case "ISC":
           badge = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
           break;
- 
+          case 'None':
+            badge = '';
+            break;
   }
 
   return badge;
 }
 
 const licenseBadge = getLicenseBadge(packageJson);
+
+/* const licenseBadge = getLicenseBadge(packageJson); */
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -80,21 +84,40 @@ case "None":
 
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({title, name, location, hobby, food, github, linkedin, license }) {
+function generateMarkdown({title, description, installation, usage, contributing, testing, questions, github, linkedin, license }) {
+  
+
   return `# ${title}
 
 ${licenseBadge}
 
 # Table of Contents
-- [Name](#${name})
-- [Location](#${location})
-- [Hobby](#${hobby})
-- [Food](#${food})
+- [Descrption](#${description})
+- [Installation](#${installation})
+- [Usage](#${usage})
+- [Contribution Guidelines](#${contributing})
 - [GitHub](#${github})
 - [LinkedIn](#${linkedin})
-${getLicenseLink(license)}
+- [License](#${getLicenseLink(license)})
+- [Questions](#${questions})
 
-## ${name}
+## Description:
+${description} <a section = "${description}"></a>
+
+## Installation instructions: 
+${installation} <a section = "${installation}"></a>
+
+## Usage:
+${usage} <a section = "${usage}"></a>
+
+## Contribution Guidelines:
+${contributing} <a section = "${contributing}"></a>
+
+## Testing instructions:
+${testing} <a section = "${testing}"></a>
+
+## Questions?:
+${questions} <a section = "${questions}"></a>
 
 ${generateLicenseSection(license)}
 `;

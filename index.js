@@ -22,23 +22,33 @@ inquirer
     },
     {
       type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      name: 'description',
+      message: 'What is the description of your application?',
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'installation',
+      message: 'Provide installation instructions for your application:',
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'usage',
+      message: 'Provide usage information for your application:',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'contributing',
+      message: 'What are the contribution guidelines?',
+    },
+    {
+      type: 'input',
+      name: 'testing',
+      message: 'What are testing protocalls for this application?',
+    },
+    {
+      type: 'input',
+      name: 'questions',
+      message: 'How can users reach you for additional questions?',
     },
     {
       type: 'input',
