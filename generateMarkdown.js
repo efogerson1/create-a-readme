@@ -99,8 +99,9 @@ ${licenseBadge}
 - [Testing](#Testing)
 - [GitHub](#GitHub)
 - [LinkedIn](#LinkedIn)
-- [License](#${getLicenseLink(license)})
 - [Questions](#Questions)
+- [License](#License)
+
 
 ## Description
 ${description}
@@ -117,14 +118,14 @@ ${contributing}
 ## Testing
 ${testing}
 
-## Questions
-${questions}
-
 ## GitHub
 ${github}
 
-##LinkedIn
+## LinkedIn
 ${linkedin}
+
+## Questions
+${questions}
 
 ## License
 ${generateLicenseSection(license)}

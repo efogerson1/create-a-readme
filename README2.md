@@ -1,4 +1,4 @@
-# TEst
+# My Cool App
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
@@ -10,32 +10,33 @@
 - [Testing](#Testing)
 - [GitHub](#GitHub)
 - [LinkedIn](#LinkedIn)
-- [License](#-[License](#License))
 - [Questions](#Questions)
+- [License](#License)
+
 
 ## Description
-ads
+Application will create a professional readme.md using input from user.
 
 ## Installation 
-asd
+Use command npm install to install needed dependencies.
 
 ## Usage
-asd
+Use case: Create readme.ms using prompt input, rather than manually.
 
 ## Contributions
-ds
+Define all work clearly by each author.
 
 ## Testing
-s
-
-## Questions
-s
+Pull request necessary for further testing.
 
 ## GitHub
-s
+efogerson1
 
-##LinkedIn
-s
+## LinkedIn
+https://www.linkedin.com/in/eric-fogerson-121a061a5/
+
+## Questions
+LinkedIn, or GitHub.
 
 ## License
 
