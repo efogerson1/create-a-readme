@@ -92,32 +92,32 @@ function generateMarkdown({title, description, installation, usage, contributing
 ${licenseBadge}
 
 # Table of Contents
-- [Description](#${description})
-- [Installation](#${installation})
-- [Usage](#${usage})
-- [Contributions](#${contributing})
-- [GitHub](#${github})
-- [LinkedIn](#${linkedin})
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributions](#Contributions)
+- [GitHub](#GitHub)
+- [LinkedIn](#LinkedIn)
 - [License](#${getLicenseLink(license)})
-- [Questions](#${questions})
+- [Questions](#Questions)
 
-## Description:
-${description} <a section = "${description}"></a>
+## Description
+
 
 ## Installation instructions: 
-${installation} <a section = "${installation}"></a>
 
-## Usage:
-${usage} <a section = "${usage}"></a>
+
+## Usage
+
 
 ## Contribution Guidelines:
-${contributing} <a section = "${contributing}"></a>
+
 
 ## Testing instructions:
-${testing} <a section = "${testing}"></a>
+
 
 ## Questions?:
-${questions} <a section = "${questions}"></a>
+
 
 ${generateLicenseSection(license)}
 `;
