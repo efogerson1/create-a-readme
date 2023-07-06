@@ -96,29 +96,37 @@ ${licenseBadge}
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributions](#Contributions)
+- [Testing](#Testing)
 - [GitHub](#GitHub)
 - [LinkedIn](#LinkedIn)
 - [License](#${getLicenseLink(license)})
 - [Questions](#Questions)
 
 ## Description
+${description}
 
-
-## Installation instructions: 
-
+## Installation 
+${installation}
 
 ## Usage
+${usage}
 
+## Contributions
+${contributing}
 
-## Contribution Guidelines:
+## Testing
+${testing}
 
+## Questions
+${questions}
 
-## Testing instructions:
+## GitHub
+${github}
 
+##LinkedIn
+${linkedin}
 
-## Questions?:
-
-
+## License
 ${generateLicenseSection(license)}
 `;
 }
